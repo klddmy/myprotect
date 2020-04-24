@@ -75,6 +75,9 @@ class Youdao():
 
 if __name__ == '__main__':
     while (True):
-        write=input("input in there:")
-        youdao=Youdao(write)
-        print("translation result : ",youdao.fanyi())
+        try:
+            write=input("input in there:")
+            youdao=Youdao(write)
+            print("translation result : ",youdao.fanyi())
+        except:
+            pass
